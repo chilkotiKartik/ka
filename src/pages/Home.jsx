@@ -9,6 +9,7 @@ import SubHome from "../components/SubHome";
 import Achievement from "../components/Achievement";
 import AviationTabs from "../components/AviationTabs"
 import EventsPage from '../components/EventsPage';
+import { Routes, Route } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -202,6 +203,11 @@ const Home = () => {
       </div>
       
     </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/aviation" element={<AviationTabs />} />
+      <Route path="/events" element={<EventsPage />} />
+    </Routes>
     </>
   );
 };
