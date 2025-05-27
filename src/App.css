@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@keyframes loading {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+.loading-bar {
+height: 16px;
+width: 0;
+background: #FAFBFB;
+animation: loading 1s infinite;
+}
+
+.main-heading , .subheading {
+  font-family: Archivo;
+  /* font-size: calc(100vw-64px); */
+  font-weight: 700;
+  font-style: italic;
+}
+
+.subHomeText{
+  font-family: Archivo;
+  font-size: 24px;
+  line-height: 1;
+  text-align: left;
+}
+
+
+@layer utilities{
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+  .no-scrollbar {
+      -ms-overflow-style: none;  
+      scrollbar-width: none;  
+}
+}
+
+
+html {
+  scrollbar-width: none;
+}
+
+::-ms-scrollbar {
+  display: none; 
+}
+
+  
